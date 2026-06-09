@@ -1,14 +1,14 @@
 function cv_S = volume_calibration(As, Vs, Cm, Cd, Ac, Vc)
-%LA-ICP-MS volume-corrected calibration of an element's intensity
+%LA-ICP-MS volume-corrected calibration of an element's concentration
 %Based on the work of Mervič et al. (2024)
 %
 %Inputs
-%  As :: {scalar} Signal intensity for an element Z [cps]
-%  Vs :: {scalar} Volume ablated [µm^3]
+%  As :: {scalar} Sample signal intensity for an element Z [cps]
+%  Vs :: {scalar} Sample volume ablated [µm^3]
 %  Cm :: {vector} Calibrant mass concentrations [µg/g]
 %  Cd :: {vector} Calibrant densities [g/cm^3]
 %  Ac :: {vector} Calibrant signal intensities for element Z [cps]
-%  Vc :: {vector} Volumes ablated [µm^3]
+%  Vc :: {vector} Calibrant volumes ablated [µm^3]
 %
 %Output
 %  cv_S:: {scalar} Vol-corrected conc. for sample S [ug/cm^3]
